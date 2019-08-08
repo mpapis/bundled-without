@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "bundled-without"
-  s.version     = "0.0.1"
+  s.version     = "0.0.2"
   s.authors     = ["Michal Papis"]
   s.email       = ["mpapis@gmail.com"]
   s.homepage    = "http://github.com/mpapis/bundled-without"
@@ -12,4 +12,7 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
 
   s.files       = `git ls-files`.split("\n")
+
+  s.add_dependency "bundler-unload", ">=1.0.2"
+  s.add_dependency "executable-hooks", ">=1.5.0"
 end
